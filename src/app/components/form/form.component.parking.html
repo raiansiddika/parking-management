@@ -1,0 +1,62 @@
+<div style="display: flex; margin-top: 10px; flex-direction: row">
+<mat-card></mat-card>
+</div>
+
+
+
+<div style="display: flex; margin-top: 10px; flex-direction: row">
+  <form class="ui-fluid form-group" [formGroup]="parkingForm">
+    <div class="ui-g-12">
+      <div caslass="ui-g ui-fluid">
+        <div class="ui-g-12 ui-md-12">
+          <div class="ui-g-12 ui-md-3">
+            <span class="md-inputfield">
+              <input type="text" pInputText formControlName="licenseNumber">
+              <label>Vehicle License Number</label>
+            </span>
+          </div>
+          <div class="ui-g-12 ui-md-3">
+            <input type="text" pInputText formControlName="vehicleType">
+            <label>Vehicle Type</label>
+          </div>
+
+          <div class="ui-g-12 ui-md-3">
+            <input type="text" pInputText formControlName="name">
+            <label>Vehicle Owner Name</label>
+          </div>
+
+          <div class="ui-g-12 ui-md-3">
+            <input type="text" pInputText formControlName="phone">
+            <label>Vehicle Owner Phone</label>
+          </div>
+
+          <div class="ui-g-12 ui-md-3">
+            <input type="text" pInputText formControlName="status">
+            <label>Status</label>
+          </div>
+
+          <div class="ui-g-12 ui-md-3">
+            <input type="text" pInputText formControlName="address">
+            <label>Address</label>
+          </div>
+
+          <div class="ui-g-12 ui-md-3">
+            <input type="text" pInputText formControlName="entryTime">
+            <label>Entry time</label>
+          </div>
+
+          <div class="ui-g-12 ui-md-3">
+            <input type="text" pInputText formControlName="exitTime">
+            <label>Exit time</label>
+          </div>
+
+          <div class="ui-g-12 ui-md-3">
+            <input type="text" pInputText formControlName="parkingCharge">
+            <label>Charge</label>
+          </div>
+        </div>
+        <button mat-raised-button color="primary" label="Save" (click)="submitForm()">Save</button>
+      </div>
+    </div>
+  </form>
+</div>
